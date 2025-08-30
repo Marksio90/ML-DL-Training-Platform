@@ -4,4 +4,4 @@ plotly>=5.20,<5.25
 numpy>=2.1,<2.3
 scikit-learn>=1.4,<1.6
 openai>=1.30,<2.0
-pdfminer.six>=20240706,<2026.0
+pdfminer.six==20250506
