@@ -1,0 +1,15 @@
+[client]
+showErrorDetails = true
+toolbarMode = "viewer"
+
+[ui]
+hideTopBar = false
+
+[server]
+headless = false
+enableCORS = true   
+enableXsrfProtection = true
+
+[theme]
+base = "light"
+primaryColor = "#4F46E5"

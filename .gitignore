@@ -1,0 +1,10 @@
+# Python
+__pycache__/
+*.pyc
+
+# Streamlit & local state
+.streamlit/secrets.toml
+ml_platform.db
+*.db
+data/
+.env
