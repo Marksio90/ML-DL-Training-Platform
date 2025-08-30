@@ -1,7 +1,7 @@
 streamlit>=1.36,<1.39
 pandas>=2.2,<2.3
 plotly>=5.20,<5.25
-numpy>=1.26,<2.0
+numpy>=2.1,<2.3
 scikit-learn>=1.4,<1.6
 openai>=1.30,<2.0
-pdfminer.six>=20231228,<2025.0
+pdfminer.six>=20240706,<2026.0
