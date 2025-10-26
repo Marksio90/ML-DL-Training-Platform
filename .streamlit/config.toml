@@ -1,15 +1,50 @@
+# ==========================
+# Streamlit global config
+# ==========================
+# Place this file at: .streamlit/config.toml
+
+# ---- Client/UI ----
 [client]
-showErrorDetails = true
-toolbarMode = "viewer"
+showErrorDetails = true          # helpful in dev; set false on prod if you prefer
+toolbarMode = "viewer"           # "auto" | "viewer" | "developer"
+caching = true
 
 [ui]
-hideTopBar = false
+hideTopBar = false               # set true if you want a cleaner look
 
+[browser]
+gatherUsageStats = false         # privacy by default
+# serverAddress and serverPort can be set via env if needed:
+# serverAddress = "0.0.0.0"
+# serverPort = 8501
+
+# ---- Server/Security ----
 [server]
-headless = false
-enableCORS = true   
-enableXsrfProtection = true
+headless = true                  # recommended for containers/servers
+enableCORS = false               # disable if you are behind a reverse proxy (recommended)
+enableXsrfProtection = true      # keep enabled
+fileWatcherType = "auto"
+maxUploadSize = 200              # MB; bump if you load big datasets
+enableWebsocketCompression = true
 
+# ---- Theme (dark-friendly) ----
 [theme]
-base = "light"
-primaryColor = "#4F46E5"
+base = "dark"                    # "light" | "dark"
+primaryColor = "#4F46E5"         # indigo-600
+backgroundColor = "#0E1117"      # dark bg
+secondaryBackgroundColor = "#151A24"
+textColor = "#E5E7EB"
+
+# ---- Runner ----
+[runner]
+magicEnabled = false             # be explicit in code
+installTracer = false
+enforceSerializableSessionState = true
+
+# ---- Mapbox (optional) ----
+# [mapbox]
+# token = "<put-your-token-here>"
+
+# ---- Logging (optional) ----
+# [logger]
+# level = "info"                 # "error" | "warning" | "info" | "debug"

@@ -4,11 +4,9 @@ import os, json, re, sqlite3, textwrap, random
 from typing import List, Dict, Any, Tuple, Optional
 import pandas as pd
 import streamlit as st
-# === Auth guard (email login) ===
-from auth import require_login, auth_sidebar
+from auth_email_verify import require_login, auth_sidebar
 _user = require_login()
 auth_sidebar()
-# === /Auth guard ===
 
 import streamlit.components.v1 as components
 import time
