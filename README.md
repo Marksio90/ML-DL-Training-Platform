@@ -2,7 +2,7 @@
 
 Lekka, modułowa aplikacja w **Streamlit**, która pokazuje koncepcję platformy do nauki uczenia maszynowego, głębokiego uczenia i zagadnień okołomodelowych (MLOps, przygotowanie do rozmów, fiszki).
 
-Ta wersja to **czysty przegląd funkcji** – bez logowania i bez zewnętrznych zależności – idealna, żeby wrzucić na GitHuba i pokazać sposób projektowania aplikacji data/AI.
+Ta wersja to **czysty przegląd funkcji** – bez logowania i bez zewnętrznych zależności – idealna, żeby pokazać sposób projektowania aplikacji data/AI.
 
 ---
 
