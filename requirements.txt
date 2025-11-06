@@ -1,9 +1,0 @@
-streamlit>=1.40.0,<2.0
-pandas>=2.2,<2.3
-plotly>=5.20,<5.25
-numpy>=2.1,<2.3
-scikit-learn>=1.4,<1.6
-openai>=1.30,<2.0
-pdfminer.six==20250506
-streamlit-authenticator
-bcrypt
